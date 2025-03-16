@@ -104,7 +104,7 @@ FlightPlanner is a web application that allows users to search for flights, filt
   - Date
   - Alphabetically
 
-- **Seat Recommendation System:** When booking, the system suggests seats based on:
+- **Seat Recommendation System:** When choosing seats, the system suggests seats based on:
   - Window seats
   - More legroom
   - Close to exit

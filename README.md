@@ -137,5 +137,6 @@ FlightPlanner is a web application that allows users to search for flights, filt
 - I assumed that the taken seats could be generated on the load of the specific page, rather than hardcoding the seatplan for every flight in the database, so it is identical every time a specific flight is loaded.
 - I assumed that for Side-by-side seating filter, the seats are positioned in pairs and the leftover seats are positioned alone.
 - I assumed that there doesn't need to be anything following the seat choosing as in paying for the tickets or saving the choices in the database.
+- I assumed that there doesn't have to be a way to add additional flights by the user (can be theoretically done by manually changing the code).
 
 

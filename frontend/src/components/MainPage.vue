@@ -96,11 +96,10 @@ export default {
     }
   },
   mounted() {
-    // Fetch the JSON file when the component is loaded
     fetch('http://localhost:3000/api/flights/')
       .then((response) => response.json())
       .then((data) => {
-        this.flights = data; // Save flights to data()
+        this.flights = data; 
         for (let flight of this.flights) {
           flight.image = this.picture(flight)
         }
@@ -145,10 +144,8 @@ export default {
       params.push(`price_min/${this.search.price_min}`);
       params.push(`price_max/${this.search.price_max}`);
 
-      // Construct the final URL
       let url = baseUrl + (params.length ? params.join("/") : "");
 
-      // Make the fetch request
       fetch(url)
         .then((response) => response.json())
         .then((data) => {
@@ -326,8 +323,6 @@ img {
 select:hover, #date, #time {
   cursor: pointer;
 }
-
-option 
 
 @media (max-width: 500px) {
   ul {

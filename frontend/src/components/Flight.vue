@@ -83,7 +83,7 @@ export default {
     data() {
         return {
             flight: null,
-            flightId: this.$route.params.id, // Get the dynamic route parameter
+            flightId: this.$route.params.id,  
             seats1: [],
             seats2: [],
             seats3: [],
@@ -301,11 +301,11 @@ export default {
             this.fromDropDownMenu = false
             if (seat[3] === "seat_availible") {
                 this.desiredTicketsCount++
-                seat[3] = "seat_chosen"; // Update the correct index
+                seat[3] = "seat_chosen";
             }
             else if (seat[3] === "seat_chosen") {
                 this.desiredTicketsCount--
-                seat[3] = "seat_availible"; // Toggle back to available
+                seat[3] = "seat_availible";
             }
 
             if (this.desiredTicketsCount > 10) {
